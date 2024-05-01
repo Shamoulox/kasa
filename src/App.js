@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import './styles/components/footer.scss';
+import Footer from './components/Footer';
+import data from "./logements.json";
+
 
 function App() {
   return (
@@ -14,10 +18,12 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
-        >
+          >
           Learn React
         </a>
       </header>
+      <Footer></Footer>
+          {data[0].title}
     </div>
   );
 }
