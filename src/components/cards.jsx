@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import imgbanner from "../Assets/images/imgbanner.png"
 
 
 function Card ()  {
     return (
         
+            <Link>
         <article>
-            <Link></Link>
-            <img src="" alt="" />
+            <img src alt={imgbanner} />
             <div className='card_content'>
-                <p className='subtitle'></p>
+                <p className='subtitle'>Titre de la location</p>
             </div>
-        </article>
+        </article></Link>
     );
 };
 

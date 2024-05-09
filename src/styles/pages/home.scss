@@ -1,0 +1,16 @@
+
+.container_home {
+    min-height: 375px;
+
+}
+.container_cards {
+    margin: 40px 10% 40px 10%;
+    display: flex;
+    flex-direction: row;
+    min-height: 829px;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    flex-wrap: wrap
+
+    ;
+}
