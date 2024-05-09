@@ -7,6 +7,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
+  bottom: 0;
 }
 .footer p {
   color: white;
@@ -15,4 +17,69 @@
   padding-top: 15px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 68px;
+  width: 90%;
+}
+
+.nav {
+  display: flex;
+  gap: 57px;
+}
+.nav a {
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.links {
+  display: flex;
+}
+
+.logonavbar img {
+  margin-left: 70px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.banner h1 {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 48px;
+}
+
+.banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 223px;
+  width: 80%;
+  border-radius: 20px;
+  filter: brightness(0.5);
+}
+
+.error-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.error-content .error-title {
+  color: #ff6060;
+  max-height: 263px;
+  font-size: 288px;
+  margin: 0;
+  padding: 130px;
+}
+.error-content .error-subtitle {
+  color: #ff6060;
+  font-size: 36px;
+  margin-bottom: 96px;
 }/*# sourceMappingURL=styles.css.map */

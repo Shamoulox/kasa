@@ -1,17 +1,15 @@
-import React from "react";
-import Footer from "../components/Footer";
+import React from 'react';
+import Banner from "../components/Banner";
 
-
-
-
-const Home = () => {
+function Home() {
   return (
     <div>
-      <h1>ACCUEIL home</h1>
-      <Footer></Footer>
-    </div>
+      
+      <Banner titleBanner="Chez vous, partout et ailleurs"></Banner>
 
+    
+    </div>
   );
-};
+}
 
 export default Home;

@@ -8,7 +8,7 @@ function Footer() {
   return (
     <div className="footer">
       Ici mon footer
-      <div className="logo">
+      <div className="logofooter">
         <img src={kletter} alt="" />
         <img src={homeletter} alt="" />
         <img src={sletter} alt="" />

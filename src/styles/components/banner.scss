@@ -1,0 +1,22 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  h1 {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 48px;
+  }
+}
+
+.banner img {
+  object-fit: cover;
+  max-height: 223px;
+  width: 80%;
+  border-radius: 20px;
+  filter: brightness(0.5);
+
+}

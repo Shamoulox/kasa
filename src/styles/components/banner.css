@@ -1,0 +1,21 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.banner h1 {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 48px;
+}
+
+.banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 223px;
+  width: 80%;
+  border-radius: 20px;
+  filter: brightness(0.5);
+}/*# sourceMappingURL=banner.css.map */
