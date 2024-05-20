@@ -1,11 +1,11 @@
-import imgbanner from "../Assets/images/imgbanner.png"
 
 
-function Banner  ({ titleBanner })  {
+
+function Banner  ({ titleBanner, imgBanner })  {
     return (
       <div className="banner">
         <h1 className="title">{titleBanner}</h1>
-        <img src= {imgbanner} alt="banner" />
+        <img src= {imgBanner} alt="banner" />
       </div>
     );
   };
