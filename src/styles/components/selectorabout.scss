@@ -1,8 +1,32 @@
-.selectorabout_button{
+.container_selector{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 2%;
 
-    display:flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap:20px;
-    background-color: red;
+
 }
+
+.selectorabout-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #f6f6f6;
+  margin: 0 15%;
+
+  .selectorabout_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: #ff6060;
+    border-radius: 5px;
+    height: 54px;
+    
+    .text-color{
+        color: aqua
+    };
+        
+    }
+  }
+

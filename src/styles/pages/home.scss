@@ -1,17 +1,25 @@
+@media (min-width: 1025px) {
+  body {
+    min-width: 1025px;
 
-.container_home {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container_home {
     min-height: 375px;
-
-}
-.container_cards {
+  }
+  .container_cards {
     margin: 40px 10% 40px 10%;
     display: flex;
-    flex-direction: row;
-    min-height: 829px;
-    background-color: #F6F6F6;
-    border-radius: 20px;
     flex-wrap: wrap;
+    min-height: 829px;
+    background-color: #f6f6f6;
+    border-radius: 20px;
     justify-content: center;
-
-    ;
+    .cards{
+      min-width: 30%;
+  }
+  }
 }

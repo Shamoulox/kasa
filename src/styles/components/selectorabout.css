@@ -1,7 +1,26 @@
-.selectorabout_button {
+.container_selector {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  margin: 2%;
+}
+
+.selectorabout-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #f6f6f6;
+  margin: 0 15%;
+}
+.selectorabout-container .selectorabout_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 20px;
-  background-color: red;
+  background-color: #ff6060;
+  border-radius: 5px;
+  height: 54px;
+}
+.selectorabout-container .selectorabout_button .text-color {
+  color: aqua;
 }/*# sourceMappingURL=selectorabout.css.map */
