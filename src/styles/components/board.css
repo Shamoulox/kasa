@@ -1,0 +1,55 @@
+.boards {
+  margin: 0 15% 0 10%;
+}
+.boards .boards-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.boards .boards-content .boards-title {
+  color: #ff6060;
+  font-size: 36px;
+  margin: 0;
+  padding: 5px;
+}
+.boards .boards-content .boards-subtitle {
+  margin: 0;
+}
+.boards .host-info p {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ff6060;
+  margin: 0;
+}
+.boards .host-info .rating_stars {
+  display: flex;
+  gap: 10px;
+}
+.boards .SelectorAbout {
+  display: flex;
+}
+.boards .SelectorAbout .selectorabout-container {
+  width: 50%;
+  margin: unset;
+}
+
+.boards-buttons-container {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons {
+  background-color: #ff6060;
+  color: white;
+  height: 25px;
+  border-radius: 10px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0 15px 0;
+}
+.buttons p {
+  font-size: 14px;
+}/*# sourceMappingURL=board.css.map */

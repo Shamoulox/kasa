@@ -10,13 +10,16 @@ function Housing() {
   const logementDatas = datajson.find((logement) => logement.id === id);
   return (
     <div>
-      <Carousel pics={logementDatas.pictures}/>
-
+      <Carousel pics={logementDatas.pictures} />
       <Boards
         title={logementDatas.title}
         location={logementDatas.location}
         host={logementDatas.host}
         rating={logementDatas.rating}
+        description={logementDatas.description}
+        equipments={logementDatas.equipments}
+
+        
       />
     </div>
   );
