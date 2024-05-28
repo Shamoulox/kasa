@@ -1,7 +1,11 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 article {
   height: 340px;
   width: 340px;
-  background-color: #ff6060;
+  background-color: #FF6060;
   border-radius: 20px;
   margin: 50px;
 }
@@ -13,12 +17,12 @@ article img {
 }
 
 .card_content {
-  color: bisque;
+  color: #FFFFFF;
   min-height: 18px;
   margin: 0 25px;
 }
 .card_content p {
-  color: white;
+  color: #FFFFFF;
   font-size: 18px;
   text-decoration: none;
 }/*# sourceMappingURL=cards.css.map */

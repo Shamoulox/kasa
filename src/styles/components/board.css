@@ -1,3 +1,7 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 .boards {
   margin: 0 15% 0 10%;
 }
@@ -8,18 +12,19 @@
   margin-bottom: 20px;
 }
 .boards .boards-content .boards-title {
-  color: #ff6060;
+  color: #FF6060;
   font-size: 36px;
   margin: 0;
   padding: 5px;
 }
 .boards .boards-content .boards-subtitle {
   margin: 0;
+  font-weight: 500;
 }
 .boards .host-info p {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #ff6060;
+  color: #FF6060;
   margin: 0;
 }
 .boards .host-info .rating_stars {
@@ -28,6 +33,7 @@
 }
 .boards .SelectorAbout {
   display: flex;
+  gap: 100px;
 }
 .boards .SelectorAbout .selectorabout-container {
   width: 50%;
@@ -40,11 +46,11 @@
 }
 
 .buttons {
-  background-color: #ff6060;
-  color: white;
+  background-color: #FF6060;
+  color: #FFFFFF;
   height: 25px;
   border-radius: 10px;
-  width: 20%;
+  width: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,4 +58,5 @@
 }
 .buttons p {
   font-size: 14px;
+  font-weight: 700;
 }/*# sourceMappingURL=board.css.map */

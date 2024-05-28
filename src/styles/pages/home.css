@@ -1,3 +1,7 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 @media (min-width: 1025px) {
   body {
     min-width: 1025px;
@@ -13,11 +17,11 @@
     display: flex;
     flex-wrap: wrap;
     min-height: 829px;
-    background-color: #f6f6f6;
+    background-color: rgba(246, 246, 246, 0.9647058824);
     border-radius: 20px;
     justify-content: center;
   }
   .container_cards .cards {
-    min-width: 30%;
+    width: 30%;
   }
 }/*# sourceMappingURL=home.css.map */

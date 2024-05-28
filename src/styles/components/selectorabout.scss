@@ -1,32 +1,36 @@
-.container_selector{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin: 2%;
+@import "../components/variable.scss";
 
-
+.container_selector {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 2%;
 }
 
 .selectorabout-container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  background-color: #f6f6f6;
+  
+  background-color: $main_background_color;
   margin: 0 15%;
 
   .selectorabout_button {
+    font-weight: 700;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    background-color: #ff6060;
-    border-radius: 5px;
+    background-color: $primary_color;
+    border-radius: 10px;
     height: 54px;
-    
-    .text-color{
-        color: aqua
-    };
-        
+    padding: 10px;
+    p {
+      margin-left: 6px;
     }
   }
 
+  .selector_text {
+    margin-left: 20px;
+    padding: 2%;
+  }
+}

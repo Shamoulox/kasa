@@ -10,7 +10,7 @@ const SelectorAbout = ({ title, text ,textcolor = "white",fontSize= "24px" }) =>
   return (
       <div className="selectorabout-container">
       <span className="selectorabout_button"style={{color: textcolor,fontSize:fontSize}}>{title}<i onClick={DropDown} className={`fa-solid fa-angle-${open ? "down" : "up"} dropdown`}style={{color: textcolor}}/></span>
-      {open && <div >{text}</div>}
+      {open && <div className="selector_text" >{text}</div>}
     </div>
     
   );

@@ -1,3 +1,7 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 .banner {
   display: flex;
   justify-content: center;
@@ -7,7 +11,7 @@
 .banner h1 {
   position: absolute;
   z-index: 1;
-  color: white;
+  color: #FFFFFF;
   font-size: 48px;
 }
 

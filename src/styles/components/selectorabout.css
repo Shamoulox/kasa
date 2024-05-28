@@ -1,3 +1,7 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 .container_selector {
   display: flex;
   flex-direction: column;
@@ -8,19 +12,24 @@
 .selectorabout-container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  background-color: #f6f6f6;
+  background-color: rgba(246, 246, 246, 0.9647058824);
   margin: 0 15%;
 }
 .selectorabout-container .selectorabout_button {
+  font-weight: 700;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  background-color: #ff6060;
-  border-radius: 5px;
+  background-color: #FF6060;
+  border-radius: 10px;
   height: 54px;
+  padding: 10px;
 }
-.selectorabout-container .selectorabout_button .text-color {
-  color: aqua;
+.selectorabout-container .selectorabout_button p {
+  margin-left: 6px;
+}
+.selectorabout-container .selector_text {
+  margin-left: 20px;
+  padding: 2%;
 }/*# sourceMappingURL=selectorabout.css.map */

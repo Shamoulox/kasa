@@ -1,7 +1,9 @@
+@import "../components/variable.scss";
+
 article {
   height: 340px;
   width: 340px;
-  background-color: #ff6060;
+  background-color: $primary_color ;
   border-radius: 20px;
   margin: 50px;
   img{
@@ -12,11 +14,11 @@ article {
 }
 }
 .card_content {
-    color: bisque;
+    color: $title_color;
     min-height: 18px;
     margin: 0 25px ;
   p {
-    color: white;
+    color: $title_color;
     font-size: 18px;
     text-decoration: none;
   }

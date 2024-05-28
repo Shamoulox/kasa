@@ -1,3 +1,7 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 .carrousel {
   margin: 0 10% 0 10%;
   position: relative;
@@ -18,4 +22,8 @@
 }
 .carrousel .fa-chevron-left {
   background-color: red;
+}
+
+.chevrons {
+  position: absolute;
 }/*# sourceMappingURL=carrousel.css.map */

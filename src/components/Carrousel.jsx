@@ -25,6 +25,7 @@ const Carousel = ({ pics }) => {
         <div className="chevrons">
           <i className="fa-solid fa-chevron-left" onClick={prevPics}></i>
           <i className="fa-solid fa-chevron-right" onClick={nextPics}></i>
+          <div></div>
           <p>
             {index + 1} / {pics.length}
           </p>

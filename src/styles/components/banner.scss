@@ -1,3 +1,5 @@
+@import "../components/variable.scss";
+
 .banner {
   display: flex;
   justify-content: center;
@@ -7,7 +9,7 @@
   h1 {
     position: absolute;
     z-index: 1;
-    color: white;
+    color: $title_color;
     font-size: 48px;
   }
 }

@@ -1,3 +1,5 @@
+@import "../components/variable.scss";
+
 .boards {
   margin: 0 15% 0 10%;
 
@@ -7,7 +9,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     .boards-title {
-      color: #ff6060;
+      color: $primary_color;
       font-size: 36px;
       margin: 0;
       padding: 5px;
@@ -15,6 +17,7 @@
 
     .boards-subtitle {
       margin: 0;
+      font-weight: 500;
     }
   }
 
@@ -22,7 +25,7 @@
     p {
       font-size: 18px;
       font-family: Arial, Helvetica, sans-serif;
-      color: #ff6060;
+      color: $primary_color;
       margin: 0;
     }
     .rating_stars {
@@ -33,6 +36,7 @@
 
   .SelectorAbout {
     display: flex;
+    gap: 100px;
     .selectorabout-container {
       width: 50%;
       margin: unset;
@@ -45,16 +49,17 @@
   gap: 10px;
 }
 .buttons {
-  background-color: #ff6060;
-  color: white;
+  background-color: $primary_color;
+  color: $title_color;
   height: 25px;
   border-radius: 10px;
-  width: 20%;
+  width: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 15px 0 15px 0;
   p{
     font-size: 14px;
+    font-weight: 700;
   }
 }

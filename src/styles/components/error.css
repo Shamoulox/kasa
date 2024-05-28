@@ -1,17 +1,21 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 .error-content {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .error-content .error-title {
-  color: #ff6060;
+  color: #FF6060;
   max-height: 263px;
   font-size: 288px;
   margin: 0;
   padding: 130px;
 }
 .error-content .error-subtitle {
-  color: #ff6060;
+  color: #FF6060;
   font-size: 36px;
   margin-bottom: 96px;
 }/*# sourceMappingURL=error.css.map */
