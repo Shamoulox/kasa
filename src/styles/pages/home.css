@@ -2,26 +2,35 @@
   font-family: "Montserrat", sans-serif;
 }
 
-@media (min-width: 1025px) {
-  body {
-    min-width: 1025px;
-    margin: auto;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .container_home {
-    min-height: 375px;
-  }
+body {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container_home {
+  min-height: 375px;
+}
+
+.container_cards {
+  margin: 40px 10% 40px 10%;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 829px;
+  background-color: rgba(246, 246, 246, 0.9647058824);
+  border-radius: 20px;
+  justify-content: center;
+}
+.container_cards .cards {
+  width: 30%;
+}
+
+@media (max-width: 1480px) {
   .container_cards {
-    margin: 40px 10% 40px 10%;
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 829px;
-    background-color: rgba(246, 246, 246, 0.9647058824);
-    border-radius: 20px;
-    justify-content: center;
+    width: unset;
+    gap: 25px;
   }
   .container_cards .cards {
-    width: 30%;
+    width: unset;
   }
 }/*# sourceMappingURL=home.css.map */

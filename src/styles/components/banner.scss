@@ -10,7 +10,7 @@
     position: absolute;
     z-index: 1;
     color: $title_color;
-    font-size: 48px;
+    font-size: 1.5em;
   }
 }
 
@@ -20,5 +20,17 @@
   width: 80%;
   border-radius: 20px;
   filter: brightness(0.5);
+}
 
+@media (max-width: 580px) {
+  .banner {
+    h1{
+      width: 70%;
+    }
+    img {
+      max-height: 111px;
+      word-wrap: break-word;
+      width: 95%;
+    }
+  }
 }

@@ -24,5 +24,36 @@ article {
   }
 }
 
+// @media (min-width: );{
+
+
+// }
+
+@media (max-width: 580px){
+  article{
+  height: 255px;
+  width: 335px;
+  background-color: $primary_color ;
+  border-radius: 20px;
+  margin: 0px;
+}
+  .cards {
+    width:unset;
+    
+  }
+  .card_content {
+    color: $title_color;
+    min-height: 18px;
+    margin: 10px 25px ;
+  p {
+    color: $title_color;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0;
+  }
+}
+  }
+
+
 
 

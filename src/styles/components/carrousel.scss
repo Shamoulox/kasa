@@ -16,18 +16,42 @@
     position: relative;
   }
 .fa-solid {
-    color: aqua;
+    color:$title_color;
     font-size: 79px;
     
 }
 
 .fa-chevron-left{
-    background-color: red;
+   
+    text-align: left;
+    width: 45%;
 
+}
+
+.fa-chevron-right{
+    text-align: right;
+    width: 45%;
 }
 
 }
 
 .chevrons{
+    
     position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 40%;
+    flex-wrap: wrap;
+    div{
+        width: 100%;
+    }
+    p{
+        display: flex;
+        top: 150px;
+        position: relative;
+        color: white;
+    
+
+    }
 }

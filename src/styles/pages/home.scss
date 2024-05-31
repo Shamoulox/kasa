@@ -1,8 +1,8 @@
 @import "../components/variable.scss";
 
-@media (min-width: 1025px) {
+// @media (min-width: 1480px) {
   body {
-    min-width: 1025px;
+    // min-width: 100vh;
 
     margin: auto;
     padding: 0;
@@ -24,4 +24,17 @@
       width: 30%;
   }
   }
+// }
+
+@media (max-width:1480px) {
+.container_cards{
+  width: unset;
+  gap: 25px;
+  .cards{
+    width: unset;
 }
+}
+  }
+  
+
+  

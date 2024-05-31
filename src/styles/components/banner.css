@@ -12,7 +12,7 @@
   position: absolute;
   z-index: 1;
   color: #FFFFFF;
-  font-size: 48px;
+  font-size: 1.5em;
 }
 
 .banner img {
@@ -22,4 +22,15 @@
   width: 80%;
   border-radius: 20px;
   filter: brightness(0.5);
+}
+
+@media (max-width: 580px) {
+  .banner h1 {
+    width: 70%;
+  }
+  .banner img {
+    max-height: 111px;
+    word-wrap: break-word;
+    width: 95%;
+  }
 }/*# sourceMappingURL=banner.css.map */

@@ -17,13 +17,32 @@
   position: relative;
 }
 .carrousel .fa-solid {
-  color: aqua;
+  color: #FFFFFF;
   font-size: 79px;
 }
 .carrousel .fa-chevron-left {
-  background-color: red;
+  text-align: left;
+  width: 45%;
+}
+.carrousel .fa-chevron-right {
+  text-align: right;
+  width: 45%;
 }
 
 .chevrons {
   position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  top: 40%;
+  flex-wrap: wrap;
+}
+.chevrons div {
+  width: 100%;
+}
+.chevrons p {
+  display: flex;
+  top: 150px;
+  position: relative;
+  color: white;
 }/*# sourceMappingURL=carrousel.css.map */

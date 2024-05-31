@@ -25,4 +25,28 @@ article img {
   color: #FFFFFF;
   font-size: 18px;
   text-decoration: none;
+}
+
+@media (max-width: 580px) {
+  article {
+    height: 255px;
+    width: 335px;
+    background-color: #FF6060;
+    border-radius: 20px;
+    margin: 0px;
+  }
+  .cards {
+    width: unset;
+  }
+  .card_content {
+    color: #FFFFFF;
+    min-height: 18px;
+    margin: 10px 25px;
+  }
+  .card_content p {
+    color: #FFFFFF;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0;
+  }
 }/*# sourceMappingURL=cards.css.map */
