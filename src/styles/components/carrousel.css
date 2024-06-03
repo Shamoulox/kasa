@@ -45,4 +45,34 @@
   top: 150px;
   position: relative;
   color: white;
+}
+
+@media (max-width: 580px) {
+  .carrousel {
+    margin: 0 5% 0 5%;
+    position: relative;
+    height: 255px;
+    display: flex;
+  }
+  .carrousel .fa-solid {
+    color: #FFFFFF;
+    font-size: 24px;
+  }
+  .chevrons {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 45%;
+    flex-wrap: wrap;
+  }
+  .chevrons div {
+    width: 100%;
+  }
+  .chevrons p {
+    display: flex;
+    top: 70px;
+    position: relative;
+    color: white;
+  }
 }/*# sourceMappingURL=carrousel.css.map */

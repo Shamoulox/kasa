@@ -13,6 +13,7 @@
   align-items: center;
   position: relative;
   bottom: 0;
+  min-height: 20vh;
 }
 .footer p {
   color: #FFFFFF;
@@ -35,5 +36,19 @@
     align-items: center;
     position: relative;
     bottom: 0;
+  }
+}
+@media (max-width: 580px) {
+  .footer {
+    background-color: #000000;
+    padding: 66px 121px 58px 121px;
+    margin: 0;
+    margin-top: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    min-height: 30vh;
   }
 }/*# sourceMappingURL=footer.css.map */

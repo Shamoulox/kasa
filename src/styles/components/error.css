@@ -13,9 +13,21 @@
   font-size: 288px;
   margin: 0;
   padding: 130px;
+  font-weight: 700;
 }
 .error-content .error-subtitle {
   color: #FF6060;
   font-size: 36px;
   margin-bottom: 96px;
+}
+
+@media (max-width: 580px) {
+  .error-title {
+    color: #FF6060;
+    max-height: 263px;
+    font-size: 96px;
+    margin: 0;
+    padding: 130px;
+    font-weight: 700;
+  }
 }/*# sourceMappingURL=error.css.map */

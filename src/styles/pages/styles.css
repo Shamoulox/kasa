@@ -13,6 +13,7 @@
   align-items: center;
   position: relative;
   bottom: 0;
+  min-height: 20vh;
 }
 .footer p {
   color: #FFFFFF;
@@ -35,6 +36,20 @@
     align-items: center;
     position: relative;
     bottom: 0;
+  }
+}
+@media (max-width: 580px) {
+  .footer {
+    background-color: #000000;
+    padding: 66px 121px 58px 121px;
+    margin: 0;
+    margin-top: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    min-height: 30vh;
   }
 }
 * {
@@ -126,6 +141,7 @@
   font-size: 288px;
   margin: 0;
   padding: 130px;
+  font-weight: 700;
 }
 .error-content .error-subtitle {
   color: #FF6060;
@@ -133,6 +149,16 @@
   margin-bottom: 96px;
 }
 
+@media (max-width: 580px) {
+  .error-title {
+    color: #FF6060;
+    max-height: 263px;
+    font-size: 96px;
+    margin: 0;
+    padding: 130px;
+    font-weight: 700;
+  }
+}
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -176,7 +202,7 @@ article img {
   .card_content {
     color: #FFFFFF;
     min-height: 18px;
-    margin: 5px 25px;
+    margin: 6px 25px;
   }
   .card_content p {
     color: #FFFFFF;
@@ -221,6 +247,16 @@ body {
     width: unset;
   }
 }
+@media (max-width: 580px) {
+  .container_cards {
+    width: unset;
+    gap: 25px;
+    background-color: unset;
+  }
+  .container_cards .cards {
+    width: unset;
+  }
+}
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -229,8 +265,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin: 2%;
+  margin: 6%;
   min-height: 40vh;
+  justify-content: center;
 }
 
 .selectorabout-container {
@@ -247,8 +284,10 @@ body {
   gap: 20px;
   background-color: #FF6060;
   border-radius: 10px;
-  height: 54px;
+  height: 52px;
   padding: 10px;
+  color: #FFFFFF;
+  font-size: 18px;
 }
 .selectorabout-container .selectorabout_button p {
   margin-left: 6px;
@@ -258,6 +297,27 @@ body {
   padding: 2%;
 }
 
+@media (max-width: 580px) {
+  .selectorabout-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(246, 246, 246, 0.9647058824);
+    margin: unset;
+  }
+  .selectorabout-container .selectorabout_button {
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: #FF6060;
+    border-radius: 10px;
+    height: 30px;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 13px;
+  }
+}
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -307,12 +367,41 @@ body {
   color: white;
 }
 
+@media (max-width: 580px) {
+  .carrousel {
+    margin: 0 5% 0 5%;
+    position: relative;
+    height: 255px;
+    display: flex;
+  }
+  .carrousel .fa-solid {
+    color: #FFFFFF;
+    font-size: 24px;
+  }
+  .chevrons {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 45%;
+    flex-wrap: wrap;
+  }
+  .chevrons div {
+    width: 100%;
+  }
+  .chevrons p {
+    display: flex;
+    top: 70px;
+    position: relative;
+    color: white;
+  }
+}
 * {
   font-family: "Montserrat", sans-serif;
 }
 
 .boards {
-  margin: 0 15% 0 10%;
+  margin: 0 10% 0 10%;
 }
 .boards .boards-content {
   display: flex;
@@ -345,7 +434,7 @@ body {
   gap: 100px;
 }
 .boards .SelectorAbout .selectorabout-container {
-  width: 50%;
+  width: 100%;
   margin: unset;
 }
 
@@ -359,15 +448,70 @@ body {
   color: #FFFFFF;
   height: 25px;
   border-radius: 10px;
-  width: 10%;
+  width: -moz-max-content;
+  width: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 15px 0 15px 0;
+  padding: 5px;
 }
 .buttons p {
   font-size: 14px;
   font-weight: 700;
+}
+
+@media (max-width: 580px) {
+  .boards {
+    margin: 0 5% 0 5%;
+  }
+  .boards .SelectorAbout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: unset;
+  }
+  .buttons {
+    background-color: #FF6060;
+    color: #FFFFFF;
+    height: 25px;
+    border-radius: 10px;
+    width: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 15px 0;
+    padding: 5px;
+  }
+  .boards-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .boards-title {
+    color: #FF6060;
+    font-size: 18px;
+    margin: 0;
+    padding: 5px;
+  }
+}
+.host-info {
+  display: flex;
+  justify-content: space-between;
+}
+.host-info p {
+  order: 2;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FF6060;
+  margin: 0;
+}
+.host-info .rating_stars {
+  order: 1;
+  display: flex;
+  gap: 10px;
 }
 
 * {

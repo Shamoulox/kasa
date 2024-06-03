@@ -3,7 +3,7 @@
 }
 
 .boards {
-  margin: 0 15% 0 10%;
+  margin: 0 10% 0 10%;
 }
 .boards .boards-content {
   display: flex;
@@ -36,7 +36,7 @@
   gap: 100px;
 }
 .boards .SelectorAbout .selectorabout-container {
-  width: 50%;
+  width: 100%;
   margin: unset;
 }
 
@@ -50,13 +50,68 @@
   color: #FFFFFF;
   height: 25px;
   border-radius: 10px;
-  width: 10%;
+  width: -moz-max-content;
+  width: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 15px 0 15px 0;
+  padding: 5px;
 }
 .buttons p {
   font-size: 14px;
   font-weight: 700;
+}
+
+@media (max-width: 580px) {
+  .boards {
+    margin: 0 5% 0 5%;
+  }
+  .boards .SelectorAbout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: unset;
+  }
+  .buttons {
+    background-color: #FF6060;
+    color: #FFFFFF;
+    height: 25px;
+    border-radius: 10px;
+    width: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 15px 0;
+    padding: 5px;
+  }
+  .boards-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .boards-title {
+    color: #FF6060;
+    font-size: 18px;
+    margin: 0;
+    padding: 5px;
+  }
+}
+.host-info {
+  display: flex;
+  justify-content: space-between;
+}
+.host-info p {
+  order: 2;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FF6060;
+  margin: 0;
+}
+.host-info .rating_stars {
+  order: 1;
+  display: flex;
+  gap: 10px;
 }/*# sourceMappingURL=board.css.map */

@@ -30,11 +30,21 @@
 .container_cards{
   width: unset;
   gap: 25px;
+  
+  
   .cards{
     width: unset;
 }
 }
   }
-  
 
-  
+  @media (max-width: 580px){
+    .container_cards{
+      width: unset;
+      gap: 25px;
+      background-color: unset;
+      
+      .cards{
+        width: unset;
+}
+    }}

@@ -2,7 +2,7 @@ import Rating from "./Stars";
 import SelectorAbout from "../components/SelectorAbout";
 // import datajson from "../logements.json";
 
-const Board = ({ title, location, host, rating, description, equipments }) => {
+const Board = ({ title, location, host, rating, description, equipments,tags }) => {
   return (
     <div className="boards">
       <section className="boards-content">
@@ -10,9 +10,9 @@ const Board = ({ title, location, host, rating, description, equipments }) => {
           <h2 className="boards-title">{title}</h2>
           <h3 className="boards-subtitle">{location}</h3>
           <div className="boards-buttons-container">
-            <span className="buttons"><p>Cozy</p></span>
-            <span className="buttons"> <p>Canal</p></span>
-            <span className="buttons"><p>Paris</p></span>
+            {tags.map((tag,index)=> (
+            <span className="buttons" key={index}><p>{tag}</p></span>
+            ))}
           </div>
           <div className="tags"></div>
         </div>

@@ -33,4 +33,14 @@ body {
   .container_cards .cards {
     width: unset;
   }
+}
+@media (max-width: 580px) {
+  .container_cards {
+    width: unset;
+    gap: 25px;
+    background-color: unset;
+  }
+  .container_cards .cards {
+    width: unset;
+  }
 }/*# sourceMappingURL=home.css.map */
