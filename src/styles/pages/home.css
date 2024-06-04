@@ -33,6 +33,7 @@ body {
     width: unset;
     gap: 25px;
     background-color: unset;
+    margin: unset;
   }
   .container_cards .cards {
     width: unset;

@@ -135,13 +135,27 @@
 }
 
 @media (max-width: 775px) {
-  .error-title {
+  .error-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .error-content .error-title {
     color: #FF6060;
-    max-height: 263px;
+    max-height: 99px;
     font-size: 96px;
     margin: 0;
-    padding: 130px;
+    padding: 100px;
     font-weight: 700;
+  }
+  .error-content .error-subtitle {
+    color: #FF6060;
+    font-size: 18px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .error-content a {
+    padding: 50px;
   }
 }
 * {
@@ -234,6 +248,7 @@ body {
     width: unset;
     gap: 25px;
     background-color: unset;
+    margin: unset;
   }
   .container_cards .cards {
     width: unset;

@@ -22,12 +22,26 @@
 }
 
 @media (max-width: 775px) {
-  .error-title {
-    color: $primary_color;
-    max-height: 263px;
-    font-size: 96px;
-    margin: 0;
-    padding: 130px;
-    font-weight: 700;
+  .error-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    .error-title {
+      color: $primary_color;
+      max-height: 99px;
+      font-size: 96px;
+      margin: 0;
+      padding: 100px;
+      font-weight: 700;
+    }
+  
+    .error-subtitle {
+      color: $primary_color;
+      font-size: 18px;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    a{padding: 50px;}
   }
 }
