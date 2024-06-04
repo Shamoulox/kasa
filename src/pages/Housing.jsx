@@ -19,7 +19,7 @@ function Housing() {
         description={logementDatas.description}
         equipments={logementDatas.equipments}
         tags={logementDatas.tags}
-
+        
         
       />
     </div>

@@ -21,6 +21,20 @@
   margin: 0;
   font-weight: 500;
 }
+.boards .host {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+.boards .host .people-pics {
+  height: 64px;
+  display: block;
+  width: 64px;
+  background-color: #C4C4C4;
+  border-radius: 50%;
+}
 .boards .host-info p {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
@@ -73,6 +87,13 @@
     gap: 20px;
     padding: unset;
   }
+  .boards .host {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    order: 2;
+  }
   .buttons {
     background-color: #FF6060;
     color: #FFFFFF;
@@ -98,16 +119,22 @@
     margin: 0;
     padding: 5px;
   }
-}
-.host-info p {
-  order: 2;
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #FF6060;
-  margin: 0;
-}
-.host-info .rating_stars {
-  order: 1;
-  display: flex;
-  gap: 10px;
+  .host-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+  }
+  .host-info p {
+    order: 2;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FF6060;
+    margin: 0;
+  }
+  .host-info .rating_stars {
+    order: 1;
+    display: flex;
+    gap: 10px;
+  }
 }/*# sourceMappingURL=board.css.map */

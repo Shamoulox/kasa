@@ -20,8 +20,22 @@
       font-weight: 500;
     }
   }
-
+.host{
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap:10px;
+padding-bottom: 30px;
+  .people-pics{
+    height: 64px;
+    display: block;
+    width: 64px;
+    background-color: $secondary_color;
+    border-radius: 50%;
+  }
+}
   .host-info {
+    
     p {
       font-size: 18px;
       font-family: Arial, Helvetica, sans-serif;
@@ -75,6 +89,14 @@
       gap: 20px;
       padding: unset;
     }
+    .host{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      
+      order:2;
+    }
   }
   .buttons {
     background-color: $primary_color;
@@ -102,21 +124,23 @@
     margin: 0;
     padding: 5px;
   }
+  .host-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+    p {
+      order: 2;
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: $primary_color;
+      margin: 0;
+    }
+    .rating_stars {
+      order: 1;
+      display: flex;
+      gap: 10px;
+    }
+  }
 }
 
-.host-info {
-  // display: flex;
-  // justify-content: space-between;
-  p {
-    order: 2;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: $primary_color;
-    margin: 0;
-  }
-  .rating_stars {
-    order: 1;
-    display: flex;
-    gap: 10px;
-  }
-}
