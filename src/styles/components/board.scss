@@ -66,7 +66,7 @@
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 775px) {
   .boards {
     margin: 0 5% 0 5%;
     .SelectorAbout {
@@ -105,8 +105,8 @@
 }
 
 .host-info {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
   p {
     order: 2;
     font-size: 18px;

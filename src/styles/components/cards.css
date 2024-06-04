@@ -3,17 +3,20 @@
 }
 
 article {
-  height: 340px;
-  width: 340px;
+  height: auto;
+  width: 100%;
   background-color: #FF6060;
   border-radius: 20px;
-  margin: 50px;
+  max-height: 340px;
 }
 article img {
   display: flex;
-  height: 80%;
+  height: auto;
   width: 100%;
   border-radius: 20px 20px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
 }
 
 .card_content {
@@ -27,7 +30,7 @@ article img {
   text-decoration: none;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 775px) {
   article {
     height: 255px;
     width: 335px;

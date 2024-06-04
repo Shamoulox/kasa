@@ -20,25 +20,19 @@
     background-color: $main_background_color;
     border-radius: 20px;
     justify-content: center;
+    gap: 20px;
+    padding: 50px;
     .cards{
       width: 30%;
+      display: flex;
   }
   }
 // }
 
-@media (max-width:1480px) {
-.container_cards{
-  width: unset;
-  gap: 25px;
-  
-  
-  .cards{
-    width: unset;
-}
-}
-  }
+// @media (max-width:1480px) {
+//   }
 
-  @media (max-width: 580px){
+  @media (max-width: 775px){
     .container_cards{
       width: unset;
       gap: 25px;

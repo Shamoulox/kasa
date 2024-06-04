@@ -47,7 +47,7 @@
   color: white;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 775px) {
   .carrousel {
     margin: 0 5% 0 5%;
     position: relative;
