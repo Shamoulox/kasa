@@ -87,11 +87,27 @@
     gap: 20px;
     padding: unset;
   }
+  .boards .boards-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .boards .boards-content .boards-title {
+    color: #FF6060;
+    font-size: 18px;
+    margin: 0;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 500;
+  }
   .boards .host {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    padding-bottom: 0px;
     order: 2;
   }
   .buttons {
@@ -99,24 +115,12 @@
     color: #FFFFFF;
     height: 25px;
     border-radius: 10px;
-    width: 84px;
+    width: -moz-max-content;
+    width: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 15px 0 15px 0;
-    padding: 5px;
-  }
-  .boards-content {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .boards-title {
-    color: #FF6060;
-    font-size: 18px;
-    margin: 0;
     padding: 5px;
   }
   .host-info {
