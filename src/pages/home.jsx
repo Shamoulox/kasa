@@ -12,6 +12,7 @@ function Home() {
         imgBanner={imgbanner}
       ></Banner>
       <div className="container_cards">
+        
         {datajson.map((data) => (
           <Cards
             key={data.id}
