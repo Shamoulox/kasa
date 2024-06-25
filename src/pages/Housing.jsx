@@ -4,6 +4,7 @@ import Boards from "../components/Boards";
 import datajson from "../logements.json";
 import React from "react";
 import Carousel from "../components/Carrousel";
+import Error from "../components/Error";
 
 function Housing() {
   // extration du paramètre "id" de l'url
@@ -11,6 +12,10 @@ function Housing() {
 // logement.id === id est la condition à vérifier : elle retourne true lorsque l'id de l'élément logement correspond à la valeur de id fournie en dehors de cette fonction.
 
   const logementDatas = datajson.find((logement) => logement.id === id);
+if(!logementDatas){
+  return <Error />
+}
+
   return (
     <div>
       <Carousel pics={logementDatas.pictures} />
