@@ -241,6 +241,7 @@ body {
 .container_cards .cards {
   width: 30%;
   display: flex;
+  text-decoration: none;
 }
 
 @media (max-width: 775px) {

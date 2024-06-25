@@ -32,7 +32,7 @@ const Board = ({
               <div>
                 <p>{host.name}</p>
               </div>
-             <img className="people-pics" src={host.picture} />
+             <img className="people-pics" src={host.picture} alt="" />
             </div>
             <Rating rating={rating} />
           </div>
