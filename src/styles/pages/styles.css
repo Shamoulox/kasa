@@ -196,7 +196,7 @@ article::after {
   min-height: 18px;
   margin: 0 25px;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   z-index: 1;
 }
 .card_content p {
