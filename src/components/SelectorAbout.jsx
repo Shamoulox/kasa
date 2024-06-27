@@ -1,25 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const SelectorAbout = ({ title, text }) => {
   const [open, setOpen] = useState(false);
+  const [id] = useState(() => Math.random().toString(36).substr(2, 9));
 
-  const DropDown = () => {
+  useEffect(() => {
+    const handleClick = (event) => {
+      if (!event.target.closest(`#selector-${id}`)) {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClick);
+
+    return () => {
+      document.removeEventListener('click', handleClick);
+    };
+  }, [id]);
+
+  const DropDown = (event) => {
+    event.stopPropagation();
     setOpen(!open);
   };
 
   return (
-    <div className="selectorabout-container">
-      <span className="selectorabout_button">
+    <div id={`selector-${id}`} className="selectorabout-container">
+      <span className="selectorabout_button" onClick={DropDown}>
         {title}
-        <i
-          onClick={DropDown}
-          className={`fa-solid fa-angle-${open ? "down" : "up"} dropdown`}
-        />
+        <i  className={`fa-solid fa-angle-${open ? "down" : "up"} dropdown`} />
       </span>
-      {open && ( //si open est vrai alors affiché ce qui suit
+      {open && (
         <div className="selector_text">
-          {/*si la condition avant le ? n'est pas un tableau afficher text et si c'est un tableau mettre le texte entre div  */}
-          {!Array.isArray(text) ? text : text.map((t) => <div>{t}</div>)}
+          {!Array.isArray(text) ? text : text.map((t, index) => <div key={index}>{t}</div>)}
         </div>
       )}
     </div>

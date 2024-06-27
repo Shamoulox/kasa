@@ -13,11 +13,10 @@
 .selectorabout-container {
   display: flex;
   flex-direction: column;
-  
-  background-color: $main_background_color;
-  margin: 0 15%;
+    margin: 0 15%;
 
   .selectorabout_button {
+    position: relative;
     font-weight: 700;
     display: flex;
     justify-content: space-between;
@@ -29,10 +28,28 @@
     padding: 10px;
     color: $title_color;
     font-size: 18px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      background-color: transparent;
+      border-radius: inherit;
+      opacity: 1;
+      z-index: -1;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
     p {
       margin-left: 6px;
     }
   }
+
+
 
   .selector_text {
     margin-left: 20px;

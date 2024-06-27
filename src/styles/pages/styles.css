@@ -286,10 +286,10 @@ body {
 .selectorabout-container {
   display: flex;
   flex-direction: column;
-  background-color: rgba(246, 246, 246, 0.9647058824);
   margin: 0 15%;
 }
 .selectorabout-container .selectorabout_button {
+  position: relative;
   font-weight: 700;
   display: flex;
   justify-content: space-between;
@@ -301,6 +301,20 @@ body {
   padding: 10px;
   color: #FFFFFF;
   font-size: 18px;
+}
+.selectorabout-container .selectorabout_button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: transparent;
+  border-radius: inherit;
+  opacity: 1;
+  z-index: -1;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .selectorabout-container .selectorabout_button p {
   margin-left: 6px;
